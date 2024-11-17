@@ -1,5 +1,3 @@
-import React from "react"
-
 function Footer() {
   return (
 <footer className="flex sticky  flex-col space-y-10 justify-center m-10">

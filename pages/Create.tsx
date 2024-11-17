@@ -1,4 +1,3 @@
-import React from 'react'
 import CreateEmployeeForm from '../components/CreateEmployeeForm'
 function Create() {
   return (

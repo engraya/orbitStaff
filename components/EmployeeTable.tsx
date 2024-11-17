@@ -1,4 +1,3 @@
-import React from "react"
 import { avatar } from "../src/assets"
 import { useSelector } from "react-redux"
 import {headers} from "../data/headers"

@@ -1,4 +1,3 @@
-import React from 'react'
 import UpdateEmployeeForm from "../components/UpdateEmployeeForm"
 function Update() {
   return (
