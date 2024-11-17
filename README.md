@@ -56,14 +56,13 @@ We welcome contributions to improve SoftEmployee! Here’s how you can get start
 
 ## Deploy on Vercel
 
-
 Check out the live version of the app at ([https://nextjs.org/docs/deployment](https://soft-employee.vercel.app/)) for more details.
 
 ## Contact
 For questions or collaboration, reach out to:
 
 - Name: Ahmad
-- Email: your-email@example.com
+- Email: engrahmadaya@gmail.com
 - Portfolio: https://engrahmadaya.vercel.app
 - GitHub: https://github.com/engraya
 
