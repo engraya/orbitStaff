@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import {countries} from "../data/countries";
@@ -11,6 +12,8 @@ import { useSelector } from "react-redux";
 import { updateEmployee } from "../store/reducers/employeeReducer";
 import { EmployeeType } from "../types/employeeType";
 import { RootState } from "../store";
+import { Link } from "react-router-dom";
+
 function UpdateEmployeeForm() {
 
   const { id } = useParams();
@@ -20,14 +23,17 @@ function UpdateEmployeeForm() {
   const employees = useSelector((state: RootState) => state.employee.employees);
   const existingEmployee = employees.find((employee : EmployeeType) => employee.id === Number(id));
 
-  // State for the form data
+
   const [formData, setFormData] = useState<EmployeeType>({
     firstName: "",
     lastName: "",
     email: "",
+      // @ts-ignore
     renumeration: "",
+      // @ts-ignore
     age: "",
     country: "",
+      // @ts-ignore
     status: "",
     position: "",
     department: "",
@@ -49,7 +55,7 @@ function UpdateEmployeeForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      // Dispatch the update action
+        // @ts-ignore
       dispatch(updateEmployee({ id, ...formData }));
       toast.success("Employee updated successfully!");
       navigate("/dashboard"); // Navigate back to the dashboard
@@ -67,7 +73,7 @@ function UpdateEmployeeForm() {
   return (
     <>
     <div className="dark:bg-gray-900">
-  <div className="w-full max-w-7xl mx-auto p-8">
+  <div className="w-full max-w-7xl mx-auto p-2">
     <div className="bg-white text-gray-700 dark:bg-gray-800 p-8 rounded-lg shadow-md border dark:border-gray-700">
       <form onSubmit={handleSubmit}>
       <div className="mb-4">
@@ -207,8 +213,11 @@ function UpdateEmployeeForm() {
           </div>
         </div>
       </div>
-      <div className="mt-6 flex justify-end">
-        <button type="submit" className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-700 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900">Update</button>
+      <div className="mt-6 flex justify-end gap-3">
+      <Link to="/dashboard">
+        <button  className="border border-red-500 text-red-500 font-bold px-4 py-2 rounded-lg">Cancel</button>
+      </Link>
+        <button type="submit" className="bg-gradient-to-r from-green-400 to-sky-500  text-white px-4 py-2 rounded-lg hover:bg-teal-700 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900">Update</button>
       </div>
       </form>
     </div>

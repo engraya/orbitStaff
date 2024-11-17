@@ -7,7 +7,7 @@ import {employeePositions} from "../data/positions";
 import {departments} from "../data/departments";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-
+import { Link } from "react-router-dom";
 function CreateEmployeeForm() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ function CreateEmployeeForm() {
     e.preventDefault();
   
     try {
-      // Dispatch action to add an employee
+      // @ts-ignore
       dispatch(addEmployee(formData));
   
       // Notify user of successful addition
@@ -75,7 +75,7 @@ function CreateEmployeeForm() {
 
   return (
 <div className="dark:bg-gray-900">
-  <div className="w-full max-w-7xl mx-auto p-8">
+  <div className="w-full max-w-7xl mx-auto p-2">
     <div className="bg-white text-gray-700 dark:bg-gray-800 p-8 rounded-lg shadow-md border dark:border-gray-700">
       <form onSubmit={handleSubmit}>
       <div className="mb-4">
@@ -215,8 +215,11 @@ function CreateEmployeeForm() {
           </div>
         </div>
       </div>
-      <div className="mt-6 flex justify-end">
-        <button type="submit" className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-700 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900">Create</button>
+      <div className="mt-6 flex justify-end gap-3">
+      <Link to="/dashboard">
+        <button  className="border border-red-500 text-red-500 font-bold px-4 py-2 rounded-lg">Cancel</button>
+      </Link>
+        <button type="submit" className="bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-4 py-2 rounded-lg hover:bg-teal-700 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900">Create</button>
       </div>
       </form>
     </div>

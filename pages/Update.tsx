@@ -3,11 +3,13 @@ import UpdateEmployeeForm from "../components/UpdateEmployeeForm"
 function Update() {
   return (
     <div className="relative mx-auto max-w-7xl">
-    <div className="text-center">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Update Employee</h2>
-      <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-        This is your life and it's ending one minute @ a time...</p>
-    </div>
+          <div className="w-full flex justify-center items-center mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
+            <h1 className="mb-2 text-2xl flex justify-center items-center font-extrabold leading-none tracking-normal text-gray-900 md:text-4xl md:tracking-tight">
+              <span className="block w-full text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+                Update Employee
+              </span>
+            </h1>
+          </div>
     <UpdateEmployeeForm/>
   </div>
   )

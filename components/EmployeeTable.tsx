@@ -1,3 +1,4 @@
+import React from "react"
 import { avatar } from "../src/assets"
 import { useSelector } from "react-redux"
 import {headers} from "../data/headers"
@@ -5,8 +6,11 @@ import { EmployeeType } from "../types/employeeType"
 import { Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { deleteEmployee } from "../store/reducers/employeeReducer"
+import { RootState } from "../store"
+
+
 function EmployeeTable() {
-  const employees = useSelector((state) => state.employee.employees);
+  const employees = useSelector((state : RootState) => state.employee.employees);
   const dispatch = useDispatch();
 
 
