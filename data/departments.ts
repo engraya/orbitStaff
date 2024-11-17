@@ -1,0 +1,27 @@
+export const departments: string[] = [
+    "Software D`evelopment",
+    "Product Management",
+    "Quality Assurance",
+    "UI/UX Design",
+    "Data Science",
+    "Cloud Engineering",
+    "Cybersecurity",
+    "IT Support",
+    "Network Administration",
+    "Database Management",
+    "DevOps",
+    "Project Management",
+    "Business Analysis",
+    "Technical Writing",
+    "Sales and Marketing",
+    "Customer Support",
+    "Game Development",
+    "Mobile App Development",
+    "Research and Development (R&D)",
+    "Human Resources (HR)",
+    "Finance",
+    "Legal and Compliance",
+    "Operations",
+    "Training and Development"
+  ];
+  

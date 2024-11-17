@@ -3,7 +3,7 @@ export interface Employee {
     firstName: string;
     lastName: string;
     email: string;
-    remuneration: number;
+    renumeration: number;
     age: number;
     country: string;
     status: "Active" | "Inactive" | "On Leave";
@@ -13,13 +13,13 @@ export interface Employee {
     phoneNumber: string;
   }
   
-  export const employees: Employee[] = [
+  export const employeeList: Employee[] = [
     {
       id: 1,
       firstName: "John",
       lastName: "Doe",
       email: "john.doe@example.com",
-      remuneration: 50000,
+      renumeration: 50000,
       age: 28,
       country: "USA",
       status: "Active",
@@ -33,7 +33,7 @@ export interface Employee {
       firstName: "Jane",
       lastName: "Smith",
       email: "jane.smith@example.com",
-      remuneration: 60000,
+      renumeration: 60000,
       age: 32,
       country: "Canada",
       status: "On Leave",
@@ -47,7 +47,7 @@ export interface Employee {
       firstName: "Michael",
       lastName: "Brown",
       email: "michael.brown@example.com",
-      remuneration: 55000,
+      renumeration: 55000,
       age: 35,
       country: "UK",
       status: "Inactive",
@@ -61,7 +61,7 @@ export interface Employee {
       firstName: "Emily",
       lastName: "Davis",
       email: "emily.davis@example.com",
-      remuneration: 48000,
+      renumeration: 48000,
       age: 26,
       country: "Australia",
       status: "Active",
@@ -75,7 +75,7 @@ export interface Employee {
       firstName: "David",
       lastName: "Wilson",
       email: "david.wilson@example.com",
-      remuneration: 52000,
+      renumeration: 52000,
       age: 30,
       country: "Germany",
       status: "Active",
