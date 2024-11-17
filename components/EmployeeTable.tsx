@@ -22,9 +22,9 @@ function EmployeeTable() {
 
   return (
 <div className="flex flex-col">
-  <div className=" overflow-x-auto pb-4">
-    <div className="min-w-full inline-block align-middle">
-      <div className="overflow-hidden  border rounded-lg border-gray-300">
+  <div className="overflow-x-auto pb-4">
+    <div className="inline-block align-middle">
+      <div className="border rounded-lg border-gray-300">
         <table className="table-auto rounded-lg">
           <thead>
           <tr className="bg-gray-50">
@@ -32,7 +32,7 @@ function EmployeeTable() {
                     <th
                       key={header.key}
                       scope="col"
-                      className="p-3 text-left whitespace-nowrap text-sm leading-6 font-semibold text-gray-900 capitalize"
+                      className="p-3 whitespace-nowrap text-sm leading-6 font-semibold text-gray-900 capitalize"
                     >
                       {header.label}
                     </th>

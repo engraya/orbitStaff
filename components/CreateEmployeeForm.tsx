@@ -33,6 +33,9 @@ function CreateEmployeeForm() {
       [id]: value,
     }));
   };
+
+    // Check if all fields are filled
+    const isFormValid = Object.values(formData).every((field) => field.trim() !== "");
   
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -219,7 +222,17 @@ function CreateEmployeeForm() {
       <Link to="/dashboard">
         <button  className="border border-red-500 text-red-500 font-bold px-4 py-2 rounded-lg">Cancel</button>
       </Link>
-        <button type="submit" className="bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-4 py-2 rounded-lg hover:bg-teal-700 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900">Create</button>
+      <button
+          type="submit"
+          disabled={!isFormValid}
+          className={`bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-4 py-2 rounded-lg ${
+            isFormValid
+              ? "hover:bg-teal-700 dark:bg-teal-600 dark:hover:bg-teal-900"
+              : "opacity-50 cursor-not-allowed"
+          }`}
+        >
+          Create
+        </button>
       </div>
       </form>
     </div>
