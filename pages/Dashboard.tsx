@@ -1,6 +1,6 @@
 import EmployeeTable from "../components/EmployeeTable";
 import CreateEmployeeButton from "../components/CreateEmployeeButton";
-import React from "react";
+
 function Dashboard() {
   return (
     <>

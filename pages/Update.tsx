@@ -1,5 +1,4 @@
 import UpdateEmployeeForm from "../components/UpdateEmployeeForm"
-import React from "react"
 function Update() {
   return (
     <div className="relative mx-auto max-w-7xl">

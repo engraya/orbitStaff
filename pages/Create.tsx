@@ -1,5 +1,4 @@
 import CreateEmployeeForm from '../components/CreateEmployeeForm'
-import React from 'react'
 function Create() {
   return (
     <div className="relative mx-auto max-w-4xl">
