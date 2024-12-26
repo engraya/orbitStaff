@@ -1,6 +1,6 @@
-# SoftEmployee
+# OrbitStaff
 
-SoftEmployee is a responsive and user-friendly Employee Directory application. It provides an intuitive interface for managing employee records, offering features like employee listing, adding new employees, and table responsiveness for seamless access across devices. 🚀.
+OrbitSatff is a responsive and user-friendly Staff Directory application. It provides an intuitive interface for managing staff records, offering features like employee listing, adding new employees, and table responsiveness for seamless access across devices. 🚀.
 
 ## Technologies Used
 
@@ -10,12 +10,11 @@ SoftEmployee is a responsive and user-friendly Employee Directory application. I
 - Package Manager: npm or yarn
 - State Management: Redux
 
-
 ## Features
 
 - Responsive Design: Fully responsive UI for mobile, tablet, and desktop screens.
 - Employee Directory: View a list of all employees in a structured table format.
-- Create Employee: Add new employees using a simple and clean form interface.
+- Create Staff: Add new staff using a simple and clean form interface.
 - Table Responsiveness: Tables adjust dynamically for smaller screens with horizontal scrolling enabled.
 
 ## Getting Started
@@ -32,20 +31,23 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-
 ## Usage
+
 Viewing the Employee Directory
-- Navigate to the homepage to view the list of employees.
-- Use the responsive table to explore employee records.
-Adding a New Employee
-- Click the "Create Employee" button.
+
+- Navigate to the homepage to view the list of staffs.
+- Use the responsive table to explore staff records.
+  Adding a New Staff
+- Click the "Create Staff" button.
 - Fill out the form with the necessary details.
 - Submit to add a new employee to the directory.
 - 
+
 Responsive Design
 The app is optimized for various screen sizes, ensuring usability on both mobile and desktop devices.
 
-##  Contributing
+## Contributing
+
 We welcome contributions to improve SoftEmployee! Here’s how you can get started:
 
 - Fork the repository.
@@ -59,10 +61,10 @@ We welcome contributions to improve SoftEmployee! Here’s how you can get start
 Check out the live version of the app at (https://soft-employee.vercel.app/) for more details.
 
 ## Contact
+
 For questions or collaboration, reach out to:
 
 - Name: Ahmad
 - Email: engrahmadaya@gmail.com
 - Portfolio: https://engrahmadaya.vercel.app
 - GitHub: https://github.com/engraya
-
