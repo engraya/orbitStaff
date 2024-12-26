@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import React from "react"
 function Home() {
   return (
     <div className="relative isolate overflow-hidden">
@@ -20,11 +21,11 @@ function Home() {
     <div className="mt-[-180px] flex h-screen items-center justify-center">
       <div className="max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8">
         <h1 className="mt-10 text-5xl font-bold tracking-tight text-white sm:text-6xl">
-        Effortless Employee Management
+        Effortless Staff Management
           <span className="text-sky-500"></span> with {" "}
-          <span className="text-sky-500">SoftEmployee</span>
+          <span className="text-sky-500">OrbitStaff</span>
         </h1>
-        <p className="mt-6 text-lg leading-8 text-gray-300">Streamline your workforce operations with SoftEmployee, the ultimate employee management solution. Track, update, and empower your team seamlessly.</p>
+        <p className="mt-6 text-lg leading-8 text-gray-300">Streamline your workforce operations with OrbitStaff, the ultimate staff management solution. Track, update, and empower your team seamlessly.</p>
         <div className="mt-5 flex items-center justify-center gap-x-6">
           <Link to="/dashboard" className="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400" rel="noreferrer">Get started →</Link>
         </div>

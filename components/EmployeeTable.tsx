@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { deleteEmployee } from "../store/reducers/employeeReducer"
 import { RootState } from "../store"
-
+import React from "react"
 
 function EmployeeTable() {
   const employees = useSelector((state : RootState) => state.employee.employees);

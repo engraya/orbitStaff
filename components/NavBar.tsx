@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,  { useState } from "react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
@@ -19,8 +19,8 @@ function NavBar() {
             className="flex items-center text-gray-100 font-medium mb-5 md:mb-0"
           >
             <span className="text-xl font-black leading-none">
-              SoftEmployee<span className="text-indigo-400">.</span>
-            </span>
+              OrbitStaff<span className="text-indigo-400">.</span>
+            </span>   
           </Link>
           {/* Hamburger Menu */}
           <button
